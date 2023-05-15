@@ -1,0 +1,7 @@
+{
+  "name": "vong_lap_dieu_kien",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^4.1.5"
+  }
+}
