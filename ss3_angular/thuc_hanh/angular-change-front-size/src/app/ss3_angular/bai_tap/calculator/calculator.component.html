@@ -1,0 +1,18 @@
+<h2> Calculator</h2>
+<div class="input-group">
+  <label for="first-number"> Fisrt Number</label>
+  <input #firstNumber
+  type="number"
+  class="form-control" id="first-number">
+</div>
+<div class="input-group">
+  <label for="first-number"> Second Number</label>
+  <input #secondNumber
+         type="number"
+         class="form-control" id="second-number">
+</div>
+<a name="cong" id="1" class="btn btn-primary" style="margin-right: 10px" (click)="sum(firstNumber.value,secondNumber.value)">Cộng</a>
+<a name="tru" id="2" class="btn btn-primary" style="margin-right: 10px" (click)="tru(firstNumber.value,secondNumber.value)">Trừ</a>
+<a name="nhan" id="3" class="btn btn-primary" style="margin-right: 10px" (click)="nhan(firstNumber.value,secondNumber.value)">Nhân</a>
+<a name="chia" id="4" class="btn btn-primary" style="margin-right: 10px" (click)="chia(firstNumber.value,secondNumber.value)">Chia</a>
+<p>Ket qua: {{result}}</p>
