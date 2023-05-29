@@ -1,0 +1,26 @@
+<h1>Đăng Nhập</h1>
+<form action="" [formGroup]="rfLogin">`
+  <div class="input-group mb-3">
+    <label for="email">Email</label>
+    <input #email
+           type="text"
+           id="email" class="form-control" formControlName="email">
+  </div>
+  <p class=text-danger *ngIf="rfLogin.controls.email?.touched &&
+  rfLogin.controls.email?.errors?.required">Không được để trống</p>
+  <p class=text-danger *ngIf="rfLogin.controls.email?.touched &&
+  rfLogin.controls.email?.errors?.email"> chưa đúng định dạng</p>
+
+  <div class="input-group mb-3">
+    <label for="password">Password: </label>
+    <input #password
+           type="text"
+           id="password" class="form-control" formControlName="password">
+  </div>
+  <p class=text-danger *ngIf="rfLogin.controls.password?.touched &&
+  rfLogin.controls.password?.errors?.required">Không được để trống</p>
+  <p class="text-danger" *ngIf="rfLogin.controls.password?.touched &&
+  rfLogin.controls.password?.errors?.minlength">Mật khẩu tối thiểu 6 kí tự</p>
+  <input name="" id="" class="btn btn-dark" type="button"
+         value="Đăng nhập">
+</form>
