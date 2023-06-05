@@ -1,0 +1,43 @@
+<div class="container">
+  <div class='table-responsive '>
+    <table class='table table-hover'>
+      <thead>
+      <tr>
+        <th>No.</th>
+        <th>Word</th>
+        <th>Mean</th>
+        <td></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let d of dictionaries, index as i;">
+        <td>{{i + 1}}</td>
+        <td>{{d.word}}</td>
+        <td>{{d.mean}}</td>
+        <td><a class=" btn btn-primary" data-toggle="modal" data-target="#exam1" (click)=getCustomer(d.word) >View</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exam1" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class="table">
+          <tr>
+            <td>word:</td>
+            <td>{{dictionary?.word}}</td>
+          </tr>
+          <tr>
+            <td>mean:</td>
+            <td>{{dictionary?.mean}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
