@@ -1,0 +1,931 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "nameCustomerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "nameCustomerType": "Platinium"
+    },
+    {
+      "id": 3,
+      "nameCustomerType": "Gold"
+    },
+    {
+      "id": 4,
+      "nameCustomerType": "Silver"
+    },
+    {
+      "id": 5,
+      "nameCustomerType": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 3,
+      "idCustomer": "KH-1113",
+      "nameCustomer": "Nguyễn Thị B",
+      "dateCustomer": "2001-04-14",
+      "genderCustomer": 1,
+      "idCardCustomer": 206306357,
+      "phoneCustomer": "+84935338475",
+      "emailCustomer": "thib@gmail.com",
+      "typeCustomer": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      },
+      "addressCustomer": "Hà Nội"
+    },
+    {
+      "id": 4,
+      "idCustomer": "KH-1114",
+      "nameCustomer": "Nguyễn Văn D",
+      "dateCustomer": "2001-04-14",
+      "genderCustomer": 2,
+      "idCardCustomer": 206306357,
+      "phoneCustomer": "+84935338475",
+      "emailCustomer": "vand@gmail.com",
+      "typeCustomer": {
+        "id": 4,
+        "nameCustomerType": "Silver"
+      },
+      "addressCustomer": "Quảng Bình"
+    },
+    {
+      "id": 5,
+      "idCustomer": "KH-1115",
+      "nameCustomer": "Võ Hi Hi",
+      "dateCustomer": "2001-04-14",
+      "genderCustomer": 0,
+      "idCardCustomer": 206306357,
+      "phoneCustomer": "+84935338475",
+      "emailCustomer": "h@gmail.com",
+      "typeCustomer": {
+        "id": 3,
+        "nameCustomerType": "Gold"
+      },
+      "addressCustomer": "Lào cai"
+    },
+    {
+      "id": 7,
+      "idCustomer": "KH-1111",
+      "nameCustomer": "Hi hi hi",
+      "dateCustomer": "2023-06-10",
+      "genderCustomer": "0",
+      "idCardCustomer": 123456789,
+      "phoneCustomer": "+84123456789",
+      "emailCustomer": "hihi@gmail.com",
+      "typeCustomer": {
+        "id": 4,
+        "nameCustomerType": "Silver"
+      },
+      "addressCustomer": "Sài Gòn"
+    },
+    {
+      "id": 8,
+      "idCustomer": "KH-1234",
+      "nameCustomer": "Nguyễn D",
+      "dateCustomer": "2023-06-03",
+      "genderCustomer": "0",
+      "idCardCustomer": 123456789,
+      "phoneCustomer": "+84123456789",
+      "emailCustomer": "dinhphuc14042001@gmail.com",
+      "typeCustomer": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      },
+      "addressCustomer": "Đà Nẵng"
+    },
+    {
+      "id": 9,
+      "idCustomer": "KH-1234",
+      "nameCustomer": "Nguyễn Thị E",
+      "dateCustomer": "2023-06-01",
+      "genderCustomer": "1",
+      "idCardCustomer": 123456789,
+      "phoneCustomer": "+84123456789",
+      "emailCustomer": "dinhphuc14042001@gmail.com",
+      "typeCustomer": {
+        "id": 2,
+        "nameCustomerType": "Platinium"
+      },
+      "addressCustomer": "Đà Nẵng"
+    },
+    {
+      "id": 10,
+      "idCustomer": "KH-1111",
+      "nameCustomer": "Hồ Văn Sung",
+      "dateCustomer": "2023-06-24",
+      "genderCustomer": "1",
+      "idCardCustomer": 123456789,
+      "phoneCustomer": "+84123456789",
+      "emailCustomer": "dinhphuc14042001@gmail.com",
+      "typeCustomer": {
+        "id": 5,
+        "nameCustomerType": "Member"
+      },
+      "addressCustomer": "Đà Nẵng"
+    },
+    {
+      "idCustomer": "KH-1232",
+      "nameCustomer": "dsadsad",
+      "dateCustomer": "2023-05-30",
+      "genderCustomer": "0",
+      "idCardCustomer": 3213123213,
+      "phoneCustomer": "+84432132132",
+      "emailCustomer": "thuan31102003@gmail.com",
+      "typeCustomer": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      },
+      "addressCustomer": "Ngũ Hành Sơn",
+      "id": 11
+    },
+    {
+      "idCustomer": "KH-1233",
+      "nameCustomer": "dsadsad",
+      "dateCustomer": "2023-06-15",
+      "genderCustomer": "0",
+      "idCardCustomer": 3131232142,
+      "phoneCustomer": "+84432132132",
+      "emailCustomer": "thuan31102003@gmail.com",
+      "typeCustomer": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      },
+      "addressCustomer": "Ngũ Hành Sơn",
+      "id": 12
+    }
+  ],
+  "rentalTypes": [
+    {
+      "id": 1,
+      "nameRentalType": "Ngày",
+      "cost": 1000000
+    },
+    {
+      "id": 2,
+      "nameRentalType": "Tháng",
+      "cost": 10000000
+    },
+    {
+      "id": 3,
+      "nameRentalType": "Năm",
+      "cost": 100000000
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "idService": "DV-1234",
+      "nameService": "Villa",
+      "dienTichService": 500,
+      "soTangService": 2,
+      "soNguoiToiDa": 10,
+      "chiPhiThue": 5000000,
+      "rentalType": {
+        "id": 2,
+        "nameRentalType": "Tháng",
+        "cost": 10000000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "id": 2,
+      "idService": "DV-1236",
+      "nameService": "House",
+      "dienTichService": 1500,
+      "soTangService": 3,
+      "soNguoiToiDa": 10,
+      "chiPhiThue": 5000000,
+      "rentalType": {
+        "id": 3,
+        "nameRentalType": "Năm",
+        "cost": 500000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "id": 3,
+      "idService": "DV-1235",
+      "nameService": "Room",
+      "dienTichService": 200,
+      "soTangService": 1,
+      "soNguoiToiDa": 5,
+      "chiPhiThue": 3000000,
+      "rentalType": {
+        "id": 2,
+        "nameRentalType": "Tháng",
+        "cost": 10000000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "id": 4,
+      "idService": "DV-1111",
+      "nameService": "Room",
+      "dienTichService": 500,
+      "soTangService": 1,
+      "soNguoiToiDa": 5,
+      "chiPhiThue": 5000000,
+      "rentalType": {
+        "id": 1,
+        "nameRentalType": "Ngày",
+        "cost": 50000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "idService": "DV-1234",
+      "nameService": "House",
+      "dienTichService": 2500,
+      "soTangService": 2,
+      "soNguoiToiDa": 15,
+      "chiPhiThue": 1000000,
+      "rentalType": {
+        "id": 2,
+        "nameRentalType": "Tháng",
+        "cost": 10000000
+      },
+      "trangThai": "Còn phòng",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "idService": "DV-1234",
+      "nameService": "Room",
+      "dienTichService": 200,
+      "soTangService": 1,
+      "soNguoiToiDa": 4,
+      "chiPhiThue": 200000,
+      "rentalType": {
+        "id": 1,
+        "nameRentalType": "Ngày",
+        "cost": 1000000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "id": 8,
+      "idService": "DV-9999",
+      "nameService": "Room",
+      "dienTichService": 300,
+      "soTangService": 1,
+      "soNguoiToiDa": 2,
+      "chiPhiThue": 1500000,
+      "rentalType": {
+        "id": 2,
+        "nameRentalType": "Tháng",
+        "cost": 10000000
+      },
+      "trangThai": "Còn phòng"
+    },
+    {
+      "idService": "DV-1235",
+      "nameService": "Villa",
+      "dienTichService": 500,
+      "soTangService": 2,
+      "soNguoiToiDa": 10,
+      "chiPhiThue": 5000000,
+      "rentalType": {
+        "id": 3,
+        "nameRentalType": "Năm",
+        "cost": 100000000
+      },
+      "trangThai": "Còn phòng",
+      "id": 9
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "namePositon": "Lễ tân"
+    },
+    {
+      "id": 2,
+      "namePositon": "Phục vụ"
+    },
+    {
+      "id": 3,
+      "namePositon": "Chuyên viên"
+    },
+    {
+      "id": 4,
+      "namePositon": "Giám sát"
+    },
+    {
+      "id": 5,
+      "namePositon": "Quản lý"
+    },
+    {
+      "id": 6,
+      "namePositon": "Giám đốc"
+    }
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "namePart": "Sale – Marketing"
+    },
+    {
+      "id": 2,
+      "namePart": "Hành chính"
+    },
+    {
+      "id": 3,
+      "namePart": "Phục vụ"
+    },
+    {
+      "id": 4,
+      "namePart": "Quản lý"
+    }
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "nameLevel": "Trung cấp"
+    },
+    {
+      "id": 2,
+      "nameLevel": "Cao đẳng"
+    },
+    {
+      "id": 3,
+      "nameLevel": "Đại học"
+    },
+    {
+      "id": 4,
+      "nameLevel": "Sau đại học"
+    }
+  ],
+  "employees": [
+    {
+      "idEmployee": "NV-1111",
+      "nameEmployee": "Nguyễn Đình Phúc",
+      "viTriEmployee": {
+        "id": 6,
+        "namePositon": "Giám đốc"
+      },
+      "trinhDoEmployee": {
+        "id": 3,
+        "nameLevel": "Đại học"
+      },
+      "boPhanEmployee": {
+        "id": 2,
+        "namePart": "Hành chính"
+      },
+      "dateEmployee": "2001-04-14",
+      "idCardEmployee": 206306357,
+      "salaryEmployee": 10000000,
+      "phoneEmployee": "+84936558748",
+      "emailEmployee": "phuc@gmail.com",
+      "addressEmployee": "Quảng Nam",
+      "id": 1
+    },
+    {
+      "idEmployee": "NV-1111",
+      "nameEmployee": "Nguyễn Thị A",
+      "viTriEmployee": {
+        "id": 1,
+        "namePositon": "Lễ tân"
+      },
+      "trinhDoEmployee": {
+        "id": 1,
+        "nameLevel": "Trung cấp"
+      },
+      "boPhanEmployee": {
+        "id": 3,
+        "namePart": "Phục vụ"
+      },
+      "dateEmployee": "2023-06-16",
+      "idCardEmployee": 123456799,
+      "salaryEmployee": 3000000,
+      "phoneEmployee": "+84123456789",
+      "emailEmployee": "nguyenthia@gmail.com",
+      "addressEmployee": "Vũng Tàu",
+      "id": 3
+    },
+    {
+      "idEmployee": "NV-1112",
+      "nameEmployee": "Nguyễn Thị Bê",
+      "viTriEmployee": {
+        "id": 2,
+        "namePositon": "Phục vụ"
+      },
+      "trinhDoEmployee": {
+        "id": 1,
+        "nameLevel": "Trung cấp"
+      },
+      "boPhanEmployee": {
+        "id": 3,
+        "namePart": "Phục vụ"
+      },
+      "dateEmployee": "2023-06-04",
+      "idCardEmployee": 123456789,
+      "salaryEmployee": 3000000,
+      "phoneEmployee": "+84123456789",
+      "emailEmployee": "nguyenthibe@gmail.com",
+      "addressEmployee": "Huế",
+      "id": 4
+    },
+    {
+      "idEmployee": "NV-1113",
+      "nameEmployee": "Nguyễn Hi",
+      "viTriEmployee": {
+        "id": 4,
+        "namePositon": "Giám sát"
+      },
+      "trinhDoEmployee": {
+        "id": 2,
+        "nameLevel": "Cao đẳng"
+      },
+      "boPhanEmployee": {
+        "id": 4,
+        "namePart": "Quản lý"
+      },
+      "dateEmployee": "2023-06-17",
+      "idCardEmployee": 123456789,
+      "salaryEmployee": 4000000,
+      "phoneEmployee": "+84123456789",
+      "emailEmployee": "nguyenh@gmail.com",
+      "addressEmployee": "Đà Nẵng",
+      "id": 5
+    },
+    {
+      "idEmployee": "NV-1114",
+      "nameEmployee": "Nguyễn G",
+      "viTriEmployee": {
+        "id": 5,
+        "namePositon": "Quản lý"
+      },
+      "trinhDoEmployee": {
+        "id": 3,
+        "nameLevel": "Đại học"
+      },
+      "boPhanEmployee": {
+        "id": 4,
+        "namePart": "Quản lý"
+      },
+      "dateEmployee": "2023-06-24",
+      "idCardEmployee": 123456789,
+      "salaryEmployee": 5000000,
+      "phoneEmployee": "+84123456789",
+      "emailEmployee": "nguyeng@gmail.com",
+      "addressEmployee": "Quảng Trị",
+      "id": 6
+    },
+    {
+      "idEmployee": "NV-4567",
+      "nameEmployee": "Hí hí",
+      "viTriEmployee": {
+        "id": 1,
+        "namePositon": "Lễ tân"
+      },
+      "trinhDoEmployee": {
+        "id": 1,
+        "nameLevel": "Trung cấp"
+      },
+      "boPhanEmployee": {
+        "id": 1,
+        "namePart": "Sale – Marketing"
+      },
+      "dateEmployee": "2023-06-22",
+      "idCardEmployee": 123456789,
+      "salaryEmployee": 3000000,
+      "phoneEmployee": "+84123456789",
+      "emailEmployee": "hihi@gmail.com",
+      "addressEmployee": "Huế",
+      "id": 7
+    }
+  ],
+  "contracts": [
+    {
+      "code": "1",
+      "employee": {
+        "idEmployee": "NV-1112",
+        "nameEmployee": "Nguyễn A",
+        "viTriEmployee": {
+          "id": 2,
+          "namePositon": "Phục vụ"
+        },
+        "trinhDoEmployee": {
+          "id": 1,
+          "nameLevel": "Trung cấp"
+        },
+        "boPhanEmployee": {
+          "id": 3,
+          "namePart": "Phục vụ"
+        },
+        "dateEmployee": "2001-04-14",
+        "idCardEmployee": 206306357,
+        "salaryEmployee": 15000000,
+        "phoneEmployee": "+84936558748",
+        "emailEmployee": "nguyena@gmail.com",
+        "addressEmployee": "Quảng Bình",
+        "id": 2
+      },
+      "customer": {
+        "id": 2,
+        "idCustomer": "KH-1112",
+        "nameCustomer": "Nguyễn Văn A",
+        "dateCustomer": "2001-04-14",
+        "genderCustomer": 0,
+        "idCardCustomer": 206306357,
+        "phoneCustomer": "+84935338475",
+        "emailCustomer": "abc@gmail.com",
+        "typeCustomer": {
+          "id": 2,
+          "nameCustomerType": "Platinium"
+        },
+        "addressCustomer": "Đà Nẵng"
+      },
+      "service": {
+        "id": 1,
+        "idService": "DV-1234",
+        "nameService": "Villa",
+        "dienTichService": 500,
+        "soTangService": 2,
+        "soNguoiToiDa": 10,
+        "chiPhiThue": 5000000,
+        "rentalType": {
+          "id": 2,
+          "nameRentalType": "Tháng",
+          "cost": 10000000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-01-01",
+      "ngayKetThuc": "2023-06-08",
+      "tienDatCoc": 5000000,
+      "tongTien": 15000000,
+      "id": 1
+    },
+    {
+      "code": "2",
+      "employee": {
+        "idEmployee": "NV-1111",
+        "nameEmployee": "Nguyễn Thị A",
+        "viTriEmployee": {
+          "id": 1,
+          "namePositon": "Lễ tân"
+        },
+        "trinhDoEmployee": {
+          "id": 1,
+          "nameLevel": "Trung cấp"
+        },
+        "boPhanEmployee": {
+          "id": 3,
+          "namePart": "Phục vụ"
+        },
+        "dateEmployee": "2023-06-16",
+        "idCardEmployee": 123456799,
+        "salaryEmployee": 3000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "nguyenthia@gmail.com",
+        "addressEmployee": "Vũng Tàu",
+        "id": 3
+      },
+      "customer": {
+        "id": 3,
+        "idCustomer": "KH-1113",
+        "nameCustomer": "Nguyễn Thị B",
+        "dateCustomer": "2001-04-14",
+        "genderCustomer": 1,
+        "idCardCustomer": 206306357,
+        "phoneCustomer": "+84935338475",
+        "emailCustomer": "thib@gmail.com",
+        "typeCustomer": {
+          "id": 3,
+          "nameCustomerType": "Gold"
+        },
+        "addressCustomer": "Hà Nội"
+      },
+      "service": {
+        "id": 2,
+        "idService": "DV-1236",
+        "nameService": "House",
+        "dienTichService": 1500,
+        "soTangService": 3,
+        "soNguoiToiDa": 10,
+        "chiPhiThue": 5000000,
+        "rentalType": {
+          "id": 3,
+          "nameRentalType": "Năm",
+          "cost": 500000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-06-03",
+      "ngayKetThuc": "2023-06-08",
+      "tienDatCoc": 1000000,
+      "tongTien": 5000000,
+      "id": 2
+    },
+    {
+      "code": "3",
+      "employee": {
+        "idEmployee": "NV-1112",
+        "nameEmployee": "Nguyễn Thị Bê",
+        "viTriEmployee": {
+          "id": 2,
+          "namePositon": "Phục vụ"
+        },
+        "trinhDoEmployee": {
+          "id": 1,
+          "nameLevel": "Trung cấp"
+        },
+        "boPhanEmployee": {
+          "id": 3,
+          "namePart": "Phục vụ"
+        },
+        "dateEmployee": "2023-06-04",
+        "idCardEmployee": 123456789,
+        "salaryEmployee": 3000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "nguyenthibe@gmail.com",
+        "addressEmployee": "Huế",
+        "id": 4
+      },
+      "customer": {
+        "id": 9,
+        "idCustomer": "KH-1234",
+        "nameCustomer": "Nguyễn Thị E",
+        "dateCustomer": "2023-06-01",
+        "genderCustomer": "1",
+        "idCardCustomer": 123456789,
+        "phoneCustomer": "+84123456789",
+        "emailCustomer": "dinhphuc14042001@gmail.com",
+        "typeCustomer": {
+          "id": 2,
+          "nameCustomerType": "Platinium"
+        },
+        "addressCustomer": "Đà Nẵng"
+      },
+      "service": {
+        "id": 3,
+        "idService": "DV-1235",
+        "nameService": "Room",
+        "dienTichService": 200,
+        "soTangService": 1,
+        "soNguoiToiDa": 5,
+        "chiPhiThue": 3000000,
+        "rentalType": {
+          "id": 2,
+          "nameRentalType": "Tháng",
+          "cost": 10000000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-05-31",
+      "ngayKetThuc": "2023-06-07",
+      "tienDatCoc": 200000,
+      "tongTien": 1000000,
+      "id": 3
+    },
+    {
+      "code": "4",
+      "employee": {
+        "idEmployee": "NV-1114",
+        "nameEmployee": "Nguyễn G",
+        "viTriEmployee": {
+          "id": 5,
+          "namePositon": "Quản lý"
+        },
+        "trinhDoEmployee": {
+          "id": 3,
+          "nameLevel": "Đại học"
+        },
+        "boPhanEmployee": {
+          "id": 4,
+          "namePart": "Quản lý"
+        },
+        "dateEmployee": "2023-06-24",
+        "idCardEmployee": 123456789,
+        "salaryEmployee": 5000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "nguyeng@gmail.com",
+        "addressEmployee": "Quảng Trị",
+        "id": 6
+      },
+      "customer": {
+        "id": 5,
+        "idCustomer": "KH-1115",
+        "nameCustomer": "Võ Hi Hi",
+        "dateCustomer": "2001-04-14",
+        "genderCustomer": 0,
+        "idCardCustomer": 206306357,
+        "phoneCustomer": "+84935338475",
+        "emailCustomer": "h@gmail.com",
+        "typeCustomer": {
+          "id": 3,
+          "nameCustomerType": "Gold"
+        },
+        "addressCustomer": "Lào cai"
+      },
+      "service": {
+        "id": 4,
+        "idService": "DV-1111",
+        "nameService": "Room",
+        "dienTichService": 500,
+        "soTangService": 1,
+        "soNguoiToiDa": 5,
+        "chiPhiThue": 5000000,
+        "rentalType": {
+          "id": 1,
+          "nameRentalType": "Ngày",
+          "cost": 50000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-06-01",
+      "ngayKetThuc": "2023-06-09",
+      "tienDatCoc": 1000000,
+      "tongTien": 1000000,
+      "id": 4
+    },
+    {
+      "code": "5",
+      "employee": {
+        "idEmployee": "NV-1111",
+        "nameEmployee": "Nguyễn Thị A",
+        "viTriEmployee": {
+          "id": 1,
+          "namePositon": "Lễ tân"
+        },
+        "trinhDoEmployee": {
+          "id": 1,
+          "nameLevel": "Trung cấp"
+        },
+        "boPhanEmployee": {
+          "id": 3,
+          "namePart": "Phục vụ"
+        },
+        "dateEmployee": "2023-06-16",
+        "idCardEmployee": 123456799,
+        "salaryEmployee": 3000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "nguyenthia@gmail.com",
+        "addressEmployee": "Vũng Tàu",
+        "id": 3
+      },
+      "customer": {
+        "id": 2,
+        "idCustomer": "KH-1112",
+        "nameCustomer": "Nguyễn Văn A",
+        "dateCustomer": "2001-04-14",
+        "genderCustomer": 0,
+        "idCardCustomer": 206306357,
+        "phoneCustomer": "+84935338475",
+        "emailCustomer": "abc@gmail.com",
+        "typeCustomer": {
+          "id": 2,
+          "nameCustomerType": "Platinium"
+        },
+        "addressCustomer": "Đà Nẵng"
+      },
+      "service": {
+        "id": 2,
+        "idService": "DV-1236",
+        "nameService": "House",
+        "dienTichService": 1500,
+        "soTangService": 3,
+        "soNguoiToiDa": 10,
+        "chiPhiThue": 5000000,
+        "rentalType": {
+          "id": 3,
+          "nameRentalType": "Năm",
+          "cost": 500000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-06-09",
+      "ngayKetThuc": "2023-06-09",
+      "tienDatCoc": 200000,
+      "tongTien": 1000000,
+      "id": 5
+    },
+    {
+      "code": "6",
+      "employee": {
+        "idEmployee": "NV-1114",
+        "nameEmployee": "Nguyễn G",
+        "viTriEmployee": {
+          "id": 5,
+          "namePositon": "Quản lý"
+        },
+        "trinhDoEmployee": {
+          "id": 3,
+          "nameLevel": "Đại học"
+        },
+        "boPhanEmployee": {
+          "id": 4,
+          "namePart": "Quản lý"
+        },
+        "dateEmployee": "2023-06-24",
+        "idCardEmployee": 123456789,
+        "salaryEmployee": 5000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "nguyeng@gmail.com",
+        "addressEmployee": "Quảng Trị",
+        "id": 6
+      },
+      "customer": {
+        "id": 8,
+        "idCustomer": "KH-1234",
+        "nameCustomer": "Nguyễn D",
+        "dateCustomer": "2023-06-03",
+        "genderCustomer": "0",
+        "idCardCustomer": 123456789,
+        "phoneCustomer": "+84123456789",
+        "emailCustomer": "dinhphuc14042001@gmail.com",
+        "typeCustomer": {
+          "id": 1,
+          "nameCustomerType": "Diamond"
+        },
+        "addressCustomer": "Đà Nẵng"
+      },
+      "service": {
+        "id": 2,
+        "idService": "DV-1236",
+        "nameService": "House",
+        "dienTichService": 1500,
+        "soTangService": 3,
+        "soNguoiToiDa": 10,
+        "chiPhiThue": 5000000,
+        "rentalType": {
+          "id": 3,
+          "nameRentalType": "Năm",
+          "cost": 500000
+        },
+        "trangThai": "Còn phòng"
+      },
+      "ngayLamHopDong": "2023-06-08",
+      "ngayKetThuc": "2023-06-10",
+      "tienDatCoc": 300000,
+      "tongTien": 1000000,
+      "id": 6
+    },
+    {
+      "code": "7",
+      "employee": {
+        "idEmployee": "NV-4567",
+        "nameEmployee": "Hí hí",
+        "viTriEmployee": {
+          "id": 1,
+          "namePositon": "Lễ tân"
+        },
+        "trinhDoEmployee": {
+          "id": 1,
+          "nameLevel": "Trung cấp"
+        },
+        "boPhanEmployee": {
+          "id": 1,
+          "namePart": "Sale – Marketing"
+        },
+        "dateEmployee": "2023-06-22",
+        "idCardEmployee": 123456789,
+        "salaryEmployee": 3000000,
+        "phoneEmployee": "+84123456789",
+        "emailEmployee": "hihi@gmail.com",
+        "addressEmployee": "Huế",
+        "id": 7
+      },
+      "customer": {
+        "id": 10,
+        "idCustomer": "KH-1111",
+        "nameCustomer": "Hồ Văn Sung",
+        "dateCustomer": "2023-06-24",
+        "genderCustomer": "1",
+        "idCardCustomer": 123456789,
+        "phoneCustomer": "+84123456789",
+        "emailCustomer": "dinhphuc14042001@gmail.com",
+        "typeCustomer": {
+          "id": 5,
+          "nameCustomerType": "Member"
+        },
+        "addressCustomer": "Đà Nẵng"
+      },
+      "service": {
+        "idService": "DV-1234",
+        "nameService": "House",
+        "dienTichService": 2500,
+        "soTangService": 2,
+        "soNguoiToiDa": 15,
+        "chiPhiThue": 1000000,
+        "rentalType": {
+          "id": 2,
+          "nameRentalType": "Tháng",
+          "cost": 10000000
+        },
+        "trangThai": "Còn phòng",
+        "id": 6
+      },
+      "ngayLamHopDong": "2023-06-07",
+      "ngayKetThuc": "2023-06-16",
+      "tienDatCoc": 300000,
+      "tongTien": 2000000,
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<br>
+<div>
+  <button class="btn btn-primary" (click)="reload('/customer/list')">Quay lại</button>
+</div>
+<div style="text-align: center">
+  <a routerLink="/customer/create">
+    <button type="button" class="btn btn-primary">Thêm mới khách hàng</button></a>
+
+</div>
+<br>
+<div style="text-align: center">
+  <input #inputSerach
+         type="text" placeholder="Input name" >
+  <button (click)="search(inputSerach)">Search</button>
+</div>
+<br>
+<h1 style="text-align: center; color: blue">Danh sách khách hàng</h1>
+
+<div>
+  <table  style="margin: 0 auto" class="table table-striped table-hover ">
+    <tr>
+      <td>STT</td>
+      <td>ID</td>
+      <td>Tên khách hàng</td>
+      <td>Ngày sinh</td>
+      <td>Giới tính</td>
+      <td>CMND</td>
+      <td>SĐT</td>
+      <td>EMAIL</td>
+      <td>Loại khách hàng</td>
+      <td>Quê quán</td>
+      <th>Dịch vụ</th>
+    </tr>
+    <tr *ngFor="let cus of customers | paginate: { itemsPerPage: 5, currentPage: p }; index as i">
+      <td>{{i+1}}</td>
+      <td>{{cus.idCustomer}}</td>
+      <td>{{cus.nameCustomer}}</td>
+      <td>{{cus.dateCustomer}}</td>
+      <td [ngSwitch]="cus.genderCustomer">
+        <span *ngSwitchCase="0">Nam</span>
+        <span *ngSwitchCase="1">Nữ</span>
+        <span *ngSwitchCase="2">LGBT</span>
+      </td>
+      <td>{{cus.idCardCustomer}}</td>
+      <td>{{cus.phoneCustomer}}</td>
+      <td>{{cus.emailCustomer}}</td>
+      <td>{{cus.typeCustomer.nameCustomerType}}</td>
+      <td>{{ cus.addressCustomer}}</td>
+      <td><a routerLink="/customer/edit/{{cus.id}}"  class="btn btn-primary"><i class="fa-solid fa-circle-info" style="color: #145ddb;"></i>Cập nhật</a></td>
+      <td><a class=" btn btn-primary" data-toggle="modal" data-target="#delete" (click)=getCustomer(cus.id)  style="background: none"><i class="fa-solid fa-trash" style="color: #d41616;"></i>Xóa</a></td>
+      <td><a type="button" class="btn btn-primary" data-toggle="modal" (click)=getCustomer(cus.id) data-target="#view" style="background: none"><i class="fa-solid fa-circle-info" style="color: #145ddb;"></i>Chi Tiết</a></td>
+    </tr>
+  </table>
+  <p *ngIf="mgs" style="font-weight: bold; text-align: center; font-size: 20px">Không có kết quả</p>
+  <pagination-controls (pageChange)="p = $event" previousLabel="Trước"
+                       nextLabel="Sau" style="text-align: center"></pagination-controls>
+</div>
+
+<!-- Modal delete-->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title text-danger" id="exampleModalLabel" >Bạn có muốn xóa khách hàng này?</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <tr>
+            <td>Id:</td>
+            <td>{{customer?.idCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Tên:</td>
+            <td>{{customer?.nameCustomer}}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="delete()">Xác nhận xóa</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal view-->
+<div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 style="color: blue">Thông tin chi tiết khách hàng</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">Đóng</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped table-hover ">
+          <tr>
+            <td>Id:</td>
+            <td>{{customer?.idCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Tên:</td>
+            <td>{{customer?.nameCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Ngày sinh:</td>
+            <td>{{customer?.dateCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Giới tính:</td>
+            <td [ngSwitch]="customer?.genderCustomer">
+              <span *ngSwitchCase="0">Nam</span>
+              <span *ngSwitchCase="1">Nữ</span>
+              <span *ngSwitchCase="2">LGBT</span>
+            </td>
+          </tr>
+          <tr>
+            <td>CMND:</td>
+            <td>{{customer?.idCardCustomer}}</td>
+          </tr>
+          <tr>
+            <td>SĐT:</td>
+            <td>{{customer?.phoneCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>{{customer?.emailCustomer}}</td>
+          </tr>
+          <tr>
+            <td>Loại khách:</td>
+            <td>{{customer?.typeCustomer.nameCustomerType}}</td>
+          </tr>
+          <tr>
+            <td>Quê quán:</td>
+            <td>{{customer?.addressCustomer}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
