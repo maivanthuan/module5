@@ -23,21 +23,6 @@
   ],
   "customers": [
     {
-      "id": 3,
-      "idCustomer": "KH-1113",
-      "nameCustomer": "Nguyễn Thị B",
-      "dateCustomer": "2001-04-14",
-      "genderCustomer": 1,
-      "idCardCustomer": 206306357,
-      "phoneCustomer": "+84935338475",
-      "emailCustomer": "thib@gmail.com",
-      "typeCustomer": {
-        "id": 1,
-        "nameCustomerType": "Diamond"
-      },
-      "addressCustomer": "Hà Nội"
-    },
-    {
       "id": 4,
       "idCustomer": "KH-1114",
       "nameCustomer": "Nguyễn Văn D",

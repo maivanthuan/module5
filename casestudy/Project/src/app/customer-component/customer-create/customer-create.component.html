@@ -7,7 +7,7 @@
         <label>Id</label>
         <input type="text" class="form-control"  formControlName="idCustomer">
         <p class="text-danger" *ngIf="customerForm.controls.idCustomer?.touched &&
-  customerForm.controls.idCustomer?.errors?.required">Không được để trống</p>
+          customerForm.controls.idCustomer?.errors?.required">Không được để trống</p>
         <p class="text-danger" *ngIf="customerForm.controls.idCustomer?.touched &&
   customerForm.controls.idCustomer?.errors?.pattern">Không hợp lệ định dạng KH-xxxx</p>
       </div>
@@ -80,3 +80,4 @@
 
   </div>
 </form>
+`

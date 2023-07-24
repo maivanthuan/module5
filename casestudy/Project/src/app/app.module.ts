@@ -10,13 +10,15 @@ import { CustomerCreateComponent } from './customer-component/customer-create/cu
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { CustomerEditComponent } from './customer-component/customer-edit/customer-edit.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerListComponent,
     CustomerCreateComponent,
-    CustomerEditComponent
+    CustomerEditComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
