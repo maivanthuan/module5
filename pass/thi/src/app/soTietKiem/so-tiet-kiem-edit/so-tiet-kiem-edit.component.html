@@ -1,0 +1,65 @@
+<br>
+<h1 style="text-align: center; color: blue">Chỉnh sửa thông tin khách hàng</h1>
+<form [formGroup]="soTietKiemForm" (ngSubmit)="updateSoTietKiem(id)">
+  <div class="container">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Mã Sổ Số</label>
+        <input type="text" class="form-control"  formControlName="maSoSo" disabled>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Mã Khách Hàng</label>
+        <select class="form-control" formControlName="maKhachHang" disabled>
+          <option *ngFor="let t of khachHangs" value="{{t.id}}" >{{t.maKhachHang}}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Tên Khách Hàng</label>
+        <input type="text" class="form-control" formControlName="tenKhachHang">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.tenKhachHang?.touched &&
+      soTietKiemForm.controls.tenKhachHang?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Ngày Mở Thẻ</label>
+        <input type="date" class="form-control" formControlName="ngayMoSo">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.ngayMoSo?.touched &&
+  soTietKiemForm.controls.ngayMoSo?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Thời Gian Bắt Đầu Gửi</label>
+        <input type="date" class="form-control" formControlName="thoiGianGui">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.thoiGianGui?.touched &&
+  soTietKiemForm.controls.thoiGianGui?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Kì Hạn</label>
+        <input type="text" class="form-control" formControlName="kyHan">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.kiHan?.touched &&
+  soTietKiemForm.controls.kiHan?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Số Tiền Gửi</label>
+        <input type="text" class="form-control" formControlName="soTienGui">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.soTienGui?.touched &&
+  soTietKiemForm.controls.soTienGui?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Lãi Suất</label>
+        <input type="text" class="form-control" formControlName="laiSuat">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.laiSuat?.touched &&
+  soTietKiemForm.controls.laiSuat?.errors?.required">Không được để trống</p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Ưu Đãi</label>
+        <input type="text" class="form-control" formControlName="uuDai">
+        <p class="text-danger" *ngIf="soTietKiemForm.controls.uuDai?.touched &&
+  soTietKiemForm.controls.uuDai?.errors?.required">Không được để trống</p>
+      </div>
+    </div>
+    <td>
+      <button  class="btn btn-primary" >Update</button>
+      <a class="btn btn-outline-info" style="margin-left:50px"  routerLink="/nganhang/list">Back</a>
+    </td>
+  </div>
+
+</form>

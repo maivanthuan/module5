@@ -1,0 +1,63 @@
+{
+  "soTietKiems": [
+    {
+      "id": 3,
+      "maSoSo": 3,
+      "maKhachHang": {
+        "id": 4,
+        "maKhachHang": 4
+      },
+      "tenKhachHang": "Tran ",
+      "ngayMoSo": "2010-05-11",
+      "thoiGianGui": "2023-07-01",
+      "kyHan": "2 Thang",
+      "soTienGui": "20023211",
+      "laiSuat": "9%/nam",
+      "uuDai": "cuc"
+    },
+    {
+      "id": 4,
+      "maSoSo": 4,
+      "maKhachHang": {
+        "id": 3,
+        "maKhachHang": 3
+      },
+      "tenKhachHang": "Thuan ",
+      "ngayMoSo": "2010-05-11",
+      "thoiGianGui": "2023-07-01",
+      "kyHan": "2 Thang",
+      "soTienGui": "20023211",
+      "laiSuat": "9%/nam",
+      "uuDai": "quan dui"
+    },
+    {
+      "id": 5,
+      "maSoSo": 5,
+      "maKhachHang": {
+        "id": 4,
+        "maKhachHang": 4
+      },
+      "tenKhachHang": "Mai ",
+      "ngayMoSo": "2010-05-11",
+      "thoiGianGui": "2023-07-01",
+      "kyHan": "2 Thang",
+      "soTienGui": "20023211",
+      "laiSuat": "9%/nam",
+      "uuDai": "thit vit"
+    }
+  ],
+  "khachHangs": [
+    {
+      "id": 3,
+      "maKhachHang": 3
+    },
+    {
+      "id": 4,
+      "maKhachHang": 4
+    },
+    {
+      "id": 2,
+      "maKhachHang": 2
+    }
+  ]
+}

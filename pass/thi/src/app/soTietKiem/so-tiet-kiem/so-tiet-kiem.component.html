@@ -1,0 +1,71 @@
+
+<input type="button" class="btn btn-primary" (click)="reload('/nganhang/list')" value="Quay Lại">
+<div style="text-align: center">
+  <input #inputSerach
+         type="text" placeholder="Tìm Kiếm" >
+  <button (click)="search(inputSerach)">Search</button>
+</div>
+<h1 style="text-align: center; color: blue">Danh sách Khách Hàng</h1>
+
+<div>
+  <table  style="margin: 0 auto" class="table table-striped table-hover ">
+    <tr>
+      <td>Mã Sổ Số</td>
+      <td>Mã Khách Hàng</td>
+      <td>Tên Khách Hàng</td>
+      <td>Ngày Mở Sổ</td>
+      <td>Thời Gian Bắt Đầu Gửi</td>
+      <td>Kì Hạn</td>
+      <td>Số Tiền Gửi</td>
+      <td>lãi Xuất</td>
+      <td>Ưu Đãi</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr *ngFor="let soTietKiem of soTietKiems | paginate: { itemsPerPage: 2, currentPage: p }; index as i">
+      <td>{{soTietKiem.maSoSo}}</td>
+      <td>{{soTietKiem.maKhachHang.maKhachHang}}</td>
+      <td>{{soTietKiem.tenKhachHang}}</td>
+      <td>{{soTietKiem.ngayMoSo}}</td>
+      <td>{{soTietKiem.thoiGianGui}}</td>
+      <td>{{soTietKiem.kyHan}}</td>
+      <td>{{soTietKiem.soTienGui}}</td>
+      <td>{{soTietKiem.laiSuat}}</td>
+      <td>{{soTietKiem.uuDai}}</td>
+      <td><a routerLink="/nganhang/edit/{{soTietKiem.id}}"  class="btn btn-primary"><i class="fa-solid fa-circle-info" style="color: #145ddb;"></i>Cập nhật</a></td>
+      <td><a class=" btn btn-primary" data-toggle="modal" data-target="#delete" (click)=getSoTietKiem(soTietKiem.id)  style="background: none"><i class="fa-solid fa-trash" style="color: #d41616;"></i>Xóa</a></td>
+    </tr>
+  </table>
+  <p *ngIf="mgs" style="font-weight: bold; text-align: center; font-size: 20px">Không có kết quả</p>
+  <pagination-controls (pageChange)="p = $event" previousLabel="Trước"
+                       nextLabel="Sau" style="text-align: center"></pagination-controls>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #FFFFFF">
+      <div class="modal-header">
+        <h4 class="modal-title text-danger" id="modelTitleId">Thông báo: Xóa khách hàng</h4>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fa-brands fa-xbox" style="color: #FF0000;"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="delete-p">Bạn có chắc chắn muốn xóa khách hàng này không?</p>
+        <ul>
+          <li>Mã Sổ Số: {{ soTietKiem?.maSoSo }}</li>
+        </ul>
+        <ul>
+          <li>Tên khách hàng: {{soTietKiem?.tenKhachHang}}</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button (click)="removeSoTietKiem(soTietKiem?.id)" data-dismiss="modal" type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
